@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useAuth } from '../../contexts/AuthContext';
 import { Mail, Lock, User } from 'lucide-react';
+import logo from '/images/logo.png';
 
 export default function LoginPage() {
   const [isLogin, setIsLogin] = useState(true);
@@ -41,7 +42,7 @@ export default function LoginPage() {
             <div className="flex flex-col items-center mb-4">
               {/* Mabric Logo */}
               <img
-                src="public/images/logo.png" // ✅ place your logo in public/ or adjust the path
+                src={logo} // ✅ place your logo in public/ or adjust the path
                 alt="Mabric Logo"
                 className="w-24 h-24 object-contain mb-3 bg-white rounded-full p-2 shadow-md"
               />

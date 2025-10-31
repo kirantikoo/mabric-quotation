@@ -3,6 +3,7 @@ import { Download, X, Printer, FileSpreadsheet } from 'lucide-react';
 import { Quotation } from '../../lib/supabase';
 import html2pdf from 'html2pdf.js';
 import * as XLSX from 'xlsx';
+import logo from '/images/logo.png';
 
 interface QuotationPreviewProps {
   quotation: Quotation;
@@ -204,7 +205,7 @@ export default function QuotationPreview({ quotation, onClose }: QuotationPrevie
           <div className="mb-8 border-b-4 border-gradient-to-r from-purple-600 via-blue-600 to-pink-600 pb-4">
             <div className="flex justify-between items-start">
               <div className="flex items-center gap-4">
-                <img src="/images/logo.png" alt="Mabric Logo" className="h-16" />
+                <img src={logo} alt="Mabric Logo" className="h-16" />
                 <div>
                   <h1 className="text-3xl font-bold text-purple-700">Mabric</h1>
                   <p className="text-sm text-gray-600 leading-snug">

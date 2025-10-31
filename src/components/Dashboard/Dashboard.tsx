@@ -5,6 +5,7 @@ import QuotationForm, { QuotationFormData } from './QuotationForm';
 import QuotationPreview from './QuotationPreview';
 import QuotationHistory from './QuotationHistory';
 import { LogOut, FileText, Plus, RefreshCcw } from 'lucide-react';
+import logo from '/images/logo.png';
 
 export default function Dashboard() {
   const { user, signOut } = useAuth();
@@ -168,7 +169,7 @@ export default function Dashboard() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex items-center justify-between">
           <div className="flex items-center gap-3">
             <img
-              src="/images/logo.png"
+              src={logo}
               alt="Mabric Logo"
               className="w-20 h-20 object-contain bg-white rounded-full p-2 shadow-md"
             />
